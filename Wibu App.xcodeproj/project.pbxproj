@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB2DAFB32C49706E0092EBEF /* Wibu_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DAFB22C49706E0092EBEF /* Wibu_AppApp.swift */; };
+		DB2DAFB32C49706E0092EBEF /* WibuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DAFB22C49706E0092EBEF /* WibuApp.swift */; };
 		DB2DAFB52C49706E0092EBEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DAFB42C49706E0092EBEF /* ContentView.swift */; };
 		DB2DAFB72C4970700092EBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DAFB62C4970700092EBEF /* Assets.xcassets */; };
 		DB2DAFBA2C4970700092EBEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DAFB92C4970700092EBEF /* Preview Assets.xcassets */; };
+		DB820AF82C4FD3AC00AB7F57 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB820AF72C4FD3AC00AB7F57 /* Anime.swift */; };
+		DB820AFC2C4FD74300AB7F57 /* AnimeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB820AFB2C4FD74300AB7F57 /* AnimeListViewModel.swift */; };
+		DB820AFE2C4FD8A200AB7F57 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB820AFD2C4FD8A200AB7F57 /* APIService.swift */; };
+		DB820B012C4FD9D600AB7F57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB820B002C4FD9D600AB7F57 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB2DAFAF2C49706E0092EBEF /* Wibu App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wibu App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB2DAFB22C49706E0092EBEF /* Wibu_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wibu_AppApp.swift; sourceTree = "<group>"; };
+		DB2DAFB22C49706E0092EBEF /* WibuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WibuApp.swift; sourceTree = "<group>"; };
 		DB2DAFB42C49706E0092EBEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB2DAFB62C4970700092EBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2DAFB92C4970700092EBEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB820AF72C4FD3AC00AB7F57 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		DB820AFB2C4FD74300AB7F57 /* AnimeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListViewModel.swift; sourceTree = "<group>"; };
+		DB820AFD2C4FD8A200AB7F57 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DB820B002C4FD9D600AB7F57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		DB2DAFB12C49706E0092EBEF /* Wibu App */ = {
 			isa = PBXGroup;
 			children = (
-				DB2DAFB22C49706E0092EBEF /* Wibu_AppApp.swift */,
-				DB2DAFB42C49706E0092EBEF /* ContentView.swift */,
+				DB820AF92C4FD60200AB7F57 /* Core */,
+				DB820AF62C4FD29900AB7F57 /* Common */,
+				DB2DAFB22C49706E0092EBEF /* WibuApp.swift */,
 				DB2DAFB62C4970700092EBEF /* Assets.xcassets */,
 				DB2DAFB82C4970700092EBEF /* Preview Content */,
 			);
@@ -65,6 +74,57 @@
 				DB2DAFB92C4970700092EBEF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB820AF32C4FD25000AB7F57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB820AF72C4FD3AC00AB7F57 /* Anime.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB820AF42C4FD28800AB7F57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB820AFB2C4FD74300AB7F57 /* AnimeListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DB820AF52C4FD28F00AB7F57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB2DAFB42C49706E0092EBEF /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB820AF62C4FD29900AB7F57 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB820AFA2C4FD62A00AB7F57 /* Services */,
+				DB820B002C4FD9D600AB7F57 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DB820AF92C4FD60200AB7F57 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DB820AF52C4FD28F00AB7F57 /* View */,
+				DB820AF42C4FD28800AB7F57 /* ViewModel */,
+				DB820AF32C4FD25000AB7F57 /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DB820AFA2C4FD62A00AB7F57 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DB820AFD2C4FD8A200AB7F57 /* APIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB2DAFB52C49706E0092EBEF /* ContentView.swift in Sources */,
-				DB2DAFB32C49706E0092EBEF /* Wibu_AppApp.swift in Sources */,
+				DB820AFE2C4FD8A200AB7F57 /* APIService.swift in Sources */,
+				DB820AFC2C4FD74300AB7F57 /* AnimeListViewModel.swift in Sources */,
+				DB2DAFB32C49706E0092EBEF /* WibuApp.swift in Sources */,
+				DB820AF82C4FD3AC00AB7F57 /* Anime.swift in Sources */,
+				DB820B012C4FD9D600AB7F57 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +351,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fancode.Wibu-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,9 +384,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fancode.Wibu-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
